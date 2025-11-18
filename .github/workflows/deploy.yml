@@ -28,7 +28,7 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          cd ecommerce-app/myweb
+          cd myweb
           docker-compose down
           docker-compose up -d --build
 		  
